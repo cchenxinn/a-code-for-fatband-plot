@@ -1,4 +1,9 @@
-cp PROCAR_back PROCAR
+# This is script for plotting fatband figures for a VASP HSE calculation
+# Author Xin Chen
+# Time: 2018 Mar. 20
+# Contact information: xinchen@physics.uu.se
+# Tips: The script‘s algorithm is not good enough, sot it may take 20 mins for a calculation.
+cp PROCAR PROCAR_backup
 mkdir -p tmpfd
 num_ion=`cat PROCAR |awk NR==2'{print $12}'`
 num_bnd=`cat PROCAR |awk NR==2'{print $8}'`
