@@ -56,7 +56,7 @@ energy=`cat kbds_$i.dat |awk NR==$num_en'{print $5}'`
 echo "$k_path  $energy  " >tmp_collum1
 for io in $(seq 1 $num_ion)
 do
-num_iotak=`expr 1 \* $(($num_en + 3 + $io))`
+num_iotak=`expr 1 \* $(($num_en + 2 + $io))`
 cat kbds_$i.dat |awk NR==$num_iotak >tmp_cm
 cp tmp_collum1 tmp_col1
 paste tmp_col1 tmp_cm >tmp_collum1
