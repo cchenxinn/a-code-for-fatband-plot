@@ -44,7 +44,7 @@ def pick():
 
 #pick atoms from btm to tp, and push atom number to output
 	print "atom number is :"
-	for x in range(0,atm_psn.shape[0]-1):
+	for x in range(0,atm_psn.shape[0]):
 		if atm_psn[x,2] > btm and atm_psn[x,2] < tp:
 			print x+1,
 	os.system('rm tmp*')
