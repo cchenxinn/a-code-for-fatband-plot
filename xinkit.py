@@ -13,7 +13,7 @@ print " 1) pick atoms of each layer and print them"
 print " 0) Exit\n"
 print "=================================================================\n\n\n"
 	
-def pick( atom_position, tolerence ):
+def pick(atom_position, tolerence):
 #get btm and tp
 	btm = atom_position - tolerence
 	tp = atom_position + tolerence
@@ -48,7 +48,7 @@ def pick( atom_position, tolerence ):
 			print x+1,
 
 ###########################################################################################################
-def slicer( tolerence )
+def slicer(tolerence):
 #read POSCAR 1-8 lines, get number of atoms
 	s0 = 'POSCAR'
 	os.environ['flnm']=s0
